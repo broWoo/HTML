@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+<!--
+now = new Date();
+year = now.getFullYear();
+month = (now.getMonth()+1);
+date = now.getDate();
+week = new Array("일요일","월요일","화요일","수요일","목요일","금요일","토요일");
+weekday = week[now.getDay()];
+hour=now.getHourse();
+min = now.getMinutes();
+var ampm;
+today = "오늘은 " + year + "년 " + month+"월 "+date+"일 "+weekday+" 입니다.";
+document.write(today);
+
+if(now.getHourse()<=12){
+	ampm="오전"
+ }else{
+	 ampm="오후"
+ }
+now_time = "지금은 " + ampm+", "+hour+"시 "+min+"분 입니다.";
+document.write(now_time);
+
+//-->
+</script>
+</head>
+<body>
+</body>
+</html>

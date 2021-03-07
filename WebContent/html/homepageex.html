@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>페이지 전체 구조</title>
+<link rel="stylesheet" type="text/css" href="/myHtml/css/default.css">
+</head>
+<body>
+	<div id="wrap">
+	<!-- 헤더파일 들어가는 곳 -->
+	<header>
+		<div id="login"><a href="#">Login</a> | <a href="#">Join us</a></div>
+		<div class="clear"></div>
+		<div id="logo"><img src="/myHtml/image/javaline2_265-62.png" width="265" height="62" alt="JavalineWeb"></div>
+		<nav id="top_menu"><!-- 위의 메인 메뉴가 들어가는 곳 -->
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Who is Tommy.Lee?</a></li>
+				<li><a href="#">MemberShip</a></li>
+				<li><a href="#">Board</a></li>
+				<li><a href="#">Framework</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- 그림파일 하나 넣겠다. 배너같은 개념. -->
+	<div id="sub_img">
+	</div>
+	<!-- 왼쪽의 서브메뉴를 배치 -->
+	<nav id="sub_menu">
+		<ul>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Join us</a></li>
+			<li><a href="#">Board</a></li>
+			<li><a href="#">Framework</a></li>
+		</ul>
+	</nav>
+	<!-- 실제 컨텐츠가 들어가는 곳 : 게시판 모양 -->
+	
+	<article id="contents">
+		<h1>My Board</h1>
+		<table id="board">
+			<tr>
+				<th class="tno">NO.</th>
+				<th class="twriter">Writer</th>
+				<th class="ttitle">Title</th>
+				<th class="tread">Read</th>
+				<th class="tdate">Date</th>
+			</tr>
+			<tr>
+				<td>33</td>
+				<td>Tommy Lee</td>
+				<td class="left">Who is Tommy. Lee? You know who is he?</td>
+				<td>20</td>
+				<td>20.12.25</td>
+			</tr>
+			<tr>
+				<td>35</td>
+				<td>홍길동</td>
+				<td class="left">왜 아버지를 아버지라 부를 수 없을까요?</td>
+				<td>325</td>
+				<td>20.01.01</td>
+			</tr>
+			<tr>
+				<td>36</td>
+				<td>손오공</td>
+				<td class="left">나는 꼭 성공할거야</td>
+				<td>1</td>
+				<td>20.05.05</td>
+			</tr>
+		</table>
+		<form method="post" name="find_frm" action="#" onsubmit="return check()">
+			<div id="table_search">
+			<select class="select_box" name="find" size="1">
+			<option value="writer">이름</option>
+			<option value="subject">제목</option>
+			<option value="content">내용</option>
+			</select>
+			<input type="text" class="input_box" name="find_box" />
+			<input type="submit" value="search" class="btn" />
+			</div>
+			</form>
+			<div class="clear"></div>
+			<div id="page_control">
+			<a href="#">Prev</a><a href="#">1</a><a href="#">2</a>
+			<a href="#">3</a><a href="#">4</a><a href="#">5</a>
+			<a href="#">6</a><a href="#">7</a><a href="#">8</a>
+			<a href="#">9</a><a href="#">10</a><a href="#">Next</a>
+			</div>
+	</article>
+			
+	<div class="clear"></div>
+	<!-- 푸터 : 저작권 회사명 담당자... -->
+	<footer>
+		<hr>
+		<div id="copy">
+		All Contents CopyRight 2020 Tommy. Lee. all rights reserved<br>
+		Contact Mail: fdac1226@hanmail.net Tel: 02-010-0022
+		</div>
+		<div id="social">
+			<img src="/myHtml/image/facebook.gif" width="33" height="33" alt="Facebook">
+			<img src="/myHtml/image/twitter.gif" width="33" height="33" alt="Twitter">
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
